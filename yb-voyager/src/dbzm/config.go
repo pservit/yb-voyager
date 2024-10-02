@@ -202,6 +202,11 @@ debezium.source.connector.class=io.debezium.connector.mysql.MySqlConnector
 debezium.source.schema.history.internal=io.debezium.storage.file.history.FileSchemaHistory
 debezium.source.schema.history.internal.file.filename=%s
 debezium.source.include.schema.changes=false
+
+debezium.source.max.batch.size=20000
+debezium.source.max.queue.size=100000
+
+debezium.source.snapshot.max.threads=8
 `
 
 var mysqlConfigTemplate = baseConfigTemplate +
