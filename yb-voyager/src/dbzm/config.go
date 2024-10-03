@@ -203,6 +203,7 @@ debezium.source.schema.history.internal=io.debezium.storage.file.history.FileSch
 debezium.source.schema.history.internal.file.filename=%s
 debezium.source.include.schema.changes=false
 
+debezium.snapshot.locking.mode=minimal_percona
 debezium.source.max.batch.size=20000
 debezium.source.max.queue.size=100000
 
