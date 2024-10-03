@@ -207,6 +207,8 @@ debezium.source.max.batch.size=20000
 debezium.source.max.queue.size=100000
 
 debezium.source.snapshot.max.threads=8
+
+debezium.errors.max.retries=0
 `
 
 var mysqlConfigTemplate = baseConfigTemplate +
